@@ -17,4 +17,8 @@ parameters {
                    steps {
                 sh 'cp target/slack-project.war /home/mayur/Documents/DevOps-Software/apache-tomcat-9.0.88/webapps'
                         }}
+stage('slack') { 
+steps { 
+slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'ramtek', color: 'good', message: 'Slag integration has been done ', teamDomain: 'Student', tokenCredentialId: '6e717163-ac06-48df-af6b-4e5e7f5e6087', username: 'mayurmale'
+}}
 }}
