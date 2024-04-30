@@ -15,6 +15,6 @@ parameters {
 
                 stage('Deployment'){
                    steps {
-                sh 'cp target/pipe-project.war /home/mayur/Documents/DevOps-Software/apache-tomcat-9.0.88/webapps'
+                sh 'cp target/slack-project.war /home/mayur/Documents/DevOps-Software/apache-tomcat-9.0.88/webapps'
                         }}
 }}
